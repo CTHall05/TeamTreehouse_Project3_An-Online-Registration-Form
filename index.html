@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>YogaFi</title>
+  </head>
+
+  <header class="header-container">
+    <h1>YogaFi</h1>
+  </header>
+
+  <div class="introduction">
+    <h2>Sign up for free content!</h2>
+    <p>
+      Sign up and get free Yoga flows and the latest lo-fi music playlists!
+    </p>
+  </div>
+
+  <form class="form-container">
+    <fieldset class="contact-information">
+      <legend id="contact-title">Contact Information</legend>
+
+      <div class="name-input">
+        <label for="name">Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="user_name"
+          placeholder="Required"
+          required
+        />
+      </div>
+
+      <div class="email-input">
+        <label for="mail">Email:</label><br />
+        <input
+          type="email"
+          id="mail"
+          name="user_email"
+          placeholder="Required"
+          required
+        />
+      </div>
+
+      <div class="phone-input">
+        <label for="phone">Phone Number:</label><br />
+        <input
+          type="tel"
+          id="phone"
+          name="user_phone"
+          placeholder="Required"
+          required
+        />
+      </div>
+
+      <div class="street-address-input">
+        <label for="street-address">Street Address:</label><br />
+        <input type="text" id="street-address" name="street_address" />
+      </div>
+
+      <div class="city-input">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="user_city" />
+      </div>
+
+      <div class="country-input">
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <optgroup label="Western-Country">
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="New-Zealand">New-Zealand</option>
+          </optgroup>
+
+          <optgroup label="Africa">
+            <option value="Africa Country">Africa Country</option>
+          </optgroup>
+
+          <optgroup label="Asia">
+            <option value="Asian Country">Asian Country</option>
+          </optgroup>
+
+          <optgroup label="South-America">
+            <option value="South American Country"
+              >South American Country</option
+            >
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="post-code-input">
+        <label for="post-code">Post Code:</label>
+        <input type="text" id="post-code" name="user_post_code" />
+      </div>
+    </fieldset>
+
+    <!-- Preference Section of Form -->
+
+    <fieldset class="preference-section">
+      <legend id="preference-title">Newsletter</legend>
+      <p>Select the content you would like to recieve:</p>
+
+      <label id="yogafi-content">YogaFi Content</label>
+
+      <div class="preference-wrapper">
+        <input
+          type="checkbox"
+          id="lofi_content"
+          value="lofi_music"
+          name="user_prefered_content"
+        /><label for="lofi_content">Lofi-Music</label>
+      </div>
+
+      <div class="preference-wrapper2">
+        <input
+          type="checkbox"
+          id="yoga_content"
+          value="yoga_flows"
+          name="user_prefered_content"
+        /><label for="yoga_content">Yoga Flows</label>
+      </div>
+
+      <div class="preference-wrapper3">
+        <input
+          type="checkbox"
+          id="yoga_news"
+          value="yoga_schools_retreats"
+          name="user_prefered_content"
+        /><label for="yoga_news">Yoga Schools and Retreats</label>
+      </div>
+
+      <label id="yoga-style-preference">Yoga Style Preference</label>
+
+      <div class="yoga-style-radio">
+        <div class="hatha-radio">
+          <input
+            type="radio"
+            id="hatha"
+            name="user_style"
+            value="hatha"
+          /><label for="hatha">Hatha</label>
+        </div>
+
+        <div class="ashtanga-radio">
+          <input
+            type="radio"
+            id="ashtanga"
+            name="user_style"
+            value="ashtanga"
+          /><label for="ashtanga">Ashtanga</label>
+        </div>
+
+        <div class="vinyasa-radio">
+          <input
+            type="radio"
+            id="vinyasa"
+            name="user_style"
+            value="vinyasa"
+          /><label for="vinyasa">Vinyasa</label>
+        </div>
+      </div>
+
+      <label class="personal_notes_title" for="personal_notes"
+        >Personal Notes:</label
+      >
+      <textarea id="personal_notes" name="user_bio"></textarea>
+    </fieldset>
+
+    <button type="submit">Sign Up</button>
+  </form>
+</html>
